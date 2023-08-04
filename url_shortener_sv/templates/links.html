@@ -49,7 +49,7 @@
 <body>
     <div class="container">
         <h1>URL Shortener - Links</h1>
-        {% for link in links %}
+        {% for link in links[::-1] %}
         <p style="text-align: center" class="custom-p">
             URL: {{ link.original_url }} <br>------<br>Short URL: <a
                 href="{{ url_for('shortener.redirect_to_url', short_url=link.short_url, _external=True) }}">{{ link.short_url }}</a>
