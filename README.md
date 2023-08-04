@@ -8,7 +8,7 @@
 
 
 <div align="center">
-    <img src="https://i.ibb.co/qrgtNrg/github.png" width="600px"</img> 
+    <img src="https://i.ibb.co/Y7Nbcqg/git.png" width="600px"</img> 
 </div>
 
 ## Key Features
