@@ -7,7 +7,9 @@
 </h1>
 
 
-
+<div align="center">
+    <img src="[/screenshots/screen1.jpg](https://i.ibb.co/qrgtNrg/github.png)" width="400px"</img> 
+</div>
  ![screenshot](https://i.ibb.co/qrgtNrg/github.png)
 
 ## Key Features
