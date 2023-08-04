@@ -1,1 +1,1 @@
-FLASK_APP=url_shortener
+FLASK_APP=__init__.py
