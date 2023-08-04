@@ -8,7 +8,7 @@
 
 
 
- ![screenshot](https://i.ibb.co/HdKx9BF/create-link.png)
+ ![screenshot](https://i.ibb.co/qrgtNrg/github.png)
 
 ## Key Features
 
