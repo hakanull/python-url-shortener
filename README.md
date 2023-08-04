@@ -31,10 +31,9 @@ First clone this repository and after install requirements with command "pip ins
 $ git clone https://github.com/ihakan0/url_shortener_sv.git
 
 # Go into the repository
-$ cd url_shortener_sv-main
+$ cd url_shortener_sv
 # install requirements
 $ pip install -r requirements.txt
-$ cd url_shortener_sv
 
 # Run the app
 $ flask run
