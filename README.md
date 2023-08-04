@@ -36,6 +36,7 @@ $ cd url_shortener_sv
 $ pip install -r requirements.txt
 
 # Run the app
+#You must be in the same folder as the "__init__.py" file before running the command
 $ flask run
 ```
 
