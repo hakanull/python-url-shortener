@@ -16,7 +16,7 @@
 This web application basically intended to shorten long links and track link clicks.
 
 * /
-  - / is a standard index.html rotation.
+  - / a standard index rotation from which our functions begin.
 * /create_link
   - /create_link link is the part where the output of the transactions made after the abbreviation and the qr code are found
 * /links
