@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL Shortener - Links</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+
+        .container {
+            background-color: rgba(255, 255, 255, 0.8); 
+            max-width: 800px;
+            margin-top: 50px;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .custom-p {
+            cursor: pointer;
+            margin: 20px;
+            padding: 12px;
+            border-radius: 8px;
+            font-size: 22px;
+            background-color: rgb(226, 226, 226);
+            max-width: 800px;
+            word-wrap: break-word;
+        }
+
+        .custom-p a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        .custom-p a:hover {
+            color: #007bff;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>URL Shortener - Links</h1>
+        {% for link in links %}
+        <p style="text-align: center" class="custom-p">
+            URL: {{ link.original_url }} <br>------<br>Short URL: <a
+                href="{{ url_for('shortener.redirect_to_url', short_url=link.short_url, _external=True) }}">{{ link.short_url }}</a>
+            <br>------<br>Clicks: {{ link.views }}
+        </p>
+        {% endfor %}
+    </div>
+</body>
+<footer style="text-align: center"> Design by HakaNull</footer>
+</html>
