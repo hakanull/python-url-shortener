@@ -11,6 +11,15 @@
     <img src="https://i.ibb.co/Y7Nbcqg/git.png" width="600px"</img> 
 </div>
 
+## Update Notes
+
+Aug 5 - 2023
+* Shortened url list edited to sort new to oldest.
+* QR code border added.
+* Added QR code download link.
+* Interface navigation buttons added.
+
+
 ## Key Features
 
 
