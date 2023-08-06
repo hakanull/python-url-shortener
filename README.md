@@ -16,7 +16,7 @@
 Aug 5 - 2023
 * Shortened url list edited to sort new to oldest.
 * QR code border added.
-* Added QR code download link.
+* QR code download button added.
 * Interface navigation buttons added.
 
 
