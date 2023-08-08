@@ -23,7 +23,7 @@ def create_link():
     db.session.add(link)
     db.session.commit()
 
-    # QR code module-----
+
     qr = qrcode.QRCode(
         version=1,
         error_correction=qrcode.constants.ERROR_CORRECT_L,
@@ -50,6 +50,15 @@ def links():
     links = Link.query.all()
 
     return render_template('links.html', links=links)
+
+
+@shortener.route('/update_link/<int:id>', methods=['POST'])
+def update_link(id):
+    new_url = request.form['new_url']
+    link = Link.query.get_or_404(id)
+    link.original_url = new_url
+    db.session.commit()
+    return redirect(url_for('shortener.links'))
 
 @shortener.errorhandler(404)
 def page_not_found(e):
