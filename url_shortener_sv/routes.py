@@ -23,7 +23,7 @@ def create_link():
     db.session.add(link)
     db.session.commit()
 
-    # QR kodu oluştur ve kaydet
+    # QR code module-----
     qr = qrcode.QRCode(
         version=1,
         error_correction=qrcode.constants.ERROR_CORRECT_L,
