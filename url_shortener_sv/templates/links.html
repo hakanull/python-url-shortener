@@ -43,6 +43,15 @@
             color: #007bff;
             text-decoration: underline;
         }
+        
+        .update-form {
+            text-align: center;
+            margin-top: 10px;
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
     </style>
 </head>
 
@@ -55,9 +64,16 @@
                 href="{{ url_for('shortener.redirect_to_url', short_url=link.short_url, _external=True) }}">{{ link.short_url }}</a>
             <br>------<br>Clicks: {{ link.views }}
         </p>
+        
+        <p style="text-align: center">{{ url_for('shortener.redirect_to_url', short_url=link.short_url, _external=True) }} Settings:</p>
+        <form class="update-form" method="POST" action="{{ url_for('shortener.update_link', id=link.id) }}">
+            <input type="url" name="new_url" placeholder="Enter new URL">
+            <button type="submit">Update</button>
+        </form>
         {% endfor %}
     </div>
 </body>
+
 <a href="/" class="btn btn-primary" style="position: fixed; top: 20px; right: 20px;">URL Shortener</a>
 <footer style="text-align: center"> Design by HakaNull</footer>
 </html>
