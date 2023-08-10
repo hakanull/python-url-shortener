@@ -1,4 +1,3 @@
-
 <h1 align="center">
   <br>
   <br>
@@ -12,6 +11,9 @@
 </div>
 
 ## Update Notes
+
+Aug 10 - 2023
+*Added function to update source url of shortened url
 
 Aug 5 - 2023
 * Shortened url list edited to sort new to oldest.
@@ -49,11 +51,3 @@ $ pip install -r requirements.txt
 #You must be in the same folder as the "__init__.py" file before running the command
 $ flask run
 ```
-
-
-> **Note**
-> host defaults to localhost:5000 or 127.0.0.1:5000
-
-
-
-
