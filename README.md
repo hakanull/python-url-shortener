@@ -1,7 +1,7 @@
 <h1 align="center">
   <br>
   <br>
-  Url_Shortener
+  Python URL Shortener
   <br>
 </h1>
 
